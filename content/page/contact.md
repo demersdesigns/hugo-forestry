@@ -5,8 +5,6 @@ description = "Cash me outside. How bow dah?"
 title = "Contact"
 
 +++
-
-
 ## Contact
 
 Stupid stuff here.
