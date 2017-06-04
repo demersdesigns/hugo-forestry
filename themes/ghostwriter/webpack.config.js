@@ -22,6 +22,9 @@ module.exports = {
     new ExtractTextPlugin('[name].css'),
     new OptimizeCssAssetsPlugin({
       cssProcessor: discardComments,
+      cssProcessorOptions: {
+        removeAll: true
+      },
       canPrint: false
     }),
     new OptimizeCssAssetsPlugin({
