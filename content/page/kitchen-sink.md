@@ -2,7 +2,6 @@
 author = "Paul Demers"
 date = "2017-06-04T13:50:04+00:00"
 description = "This is a post with a bunch of stuff"
-draft = true
 tags = []
 title = "Kitchen Sink"
 
