@@ -1,10 +1,10 @@
 +++
-title = "Migrating from Jekyll"
-description = "Migrating from Jekyll description."
-date = 2014-04-02T02:13:50Z
 author = "Michael Henderson"
-+++
+date = "2014-04-02T02:13:50Z"
+description = "Migrating from Jekyll description."
+title = "Migrating from Jekyll"
 
++++
 ## Move static content to `static`
 
 Jekyll has a rule that any directory not starting with `_` will be copied as-is to the `_site` output. Hugo keeps all static content under `static`. You should therefore move it all there.

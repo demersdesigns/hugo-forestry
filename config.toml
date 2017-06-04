@@ -1,55 +1,47 @@
 baseurl = "http://painter-rabbit-30841.netlify.com/"
-title = "Ghostwriter example"
-theme = "ghostwriter"
-languageCode = "en-us"
 copyright = "My Name"
 disqusShortname = "XXX"
 googleAnalytics = "XXX"
-
+languageCode = "en-us"
+theme = "ghostwriter"
+title = "Ghostwriter example"
 [Author]
-    name = "My Name"
-    profile = "https://google.com/+XXX"
-
-[Taxonomies]
-    tag = "tags"
-
-[Params]
-    intro = true
-    headline = "Ghostwriter example"
-    description = "Ghostwriter example description"
-    github = "https://github.com/XXX"
-    gitlab = "https://gitlab.com/XXX"
-    linkedin = "https://linkedin.com/in/XXX/"
-    gplus = "https://google.com/+XXX"
-    twitter = "https://twitter.com/XXX"
-    stackoverflow = "https://stackoverflow.com/users/XXX/YYY"
-    email = "XXX@example.com"
-    opengraph = true
-    shareTwitter = true
-    shareFacebook = true
-    shareGooglePlus = true
-    shareLinkedIn = false
-    dateFormat = "Mon, Jan 2, 2006"
-
+name = "My Name"
+profile = "https://google.com/+XXX"
 [Permalinks]
-    post = "/:year/:month/:day/:filename/"
-
+post = "/:year/:month/:day/:filename/"
+[Taxonomies]
+tag = "tags"
 [[menu.main]]
-    name = "Blog"
-    url = "/"
-    weight = 1
-
+name = "About"
+url = "/page/about/"
+weight = 4
 [[menu.main]]
-    name = "Projects"
-    url = "/project/"
-    weight = 2
-
+name = "Contact"
+url = "/page/contact/"
+weight = 3
 [[menu.main]]
-    name = "Contact"
-    url = "/page/contact/"
-    weight = 3
-
+name = "Projects"
+url = "/project/"
+weight = 2
 [[menu.main]]
-    name = "About"
-    url = "/page/about/"
-    weight = 4
+name = "Blog"
+url = "/"
+weight = 1
+[params]
+dateformat = "Mon, Jan 2, 2006"
+description = "Ghostwriter example description"
+email = "XXX@example.com"
+github = "https://github.com/XXX"
+gitlab = "https://gitlab.com/XXX"
+gplus = "https://google.com/+XXX"
+headline = "Ghostwriter example"
+intro = true
+linkedin = "https://linkedin.com/in/XXX/"
+opengraph = true
+sharefacebook = true
+sharegoogleplus = true
+sharelinkedin = false
+sharetwitter = true
+stackoverflow = "https://stackoverflow.com/users/XXX/YYY"
+twitter = "https://twitter.com/XXX"
