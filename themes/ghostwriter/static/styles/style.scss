@@ -13,28 +13,29 @@ $background: #FEFEFE;
 html, body { height: 100%; }
 
 body {
-    background: $background;
-    color: #424242;
-    font-family: "Open Sans", arial, sans-serif;
-    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+    font-size: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 20px;
-    text-transform: none;
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+    line-height: 1.5;
 }
 
-h1 { font-size: 26px; }
-h2 { font-size: 24px; }
-h3 { font-size: 20px; margin-bottom: 20px; }
-h4 { font-size: 18px; margin-bottom: 18px; }
-h5 { font-size: 16px; margin-bottom: 15px; }
-h6 { font-size: 14px; margin-bottom: 12px; }
-
-p {
-    line-height: 1.8;
-    margin: 0 0 30px;
+* + * {
+    margin-top: 1.5em;
 }
+
+h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+
+h2 {font-size: 1.728em;}
+
+h3 {font-size: 1.44em;}
+
+h4 {font-size: 1.2em;}
 
 a {
     color: $primary;
@@ -43,21 +44,13 @@ a {
 
 ul, ol {
     line-height: 1.4;
-    margin: 0 0 20px;
-
-    ul, ol { margin: 10px 0 0 20px; }
-
     li {
-        margin: 0 0 2px;
-
         &:last-of-type { margin-bottom: 0; }
     }
 }
 
 blockquote {
     border-left: 1px dotted $primary;
-    margin: 40px 0;
-    padding: 5px 30px;
 
     p {
         color: #AEADAD;
@@ -70,7 +63,6 @@ blockquote {
 
 img {
     display: block;
-    margin: 40px 0;
     width: auto;
     max-width: 100%;
 }
@@ -79,7 +71,6 @@ pre {
     background: #F1F0EA;
     border: 1px solid #DDDBCC;
     border-radius: 3px;
-    margin: 0 0 20px;
     overflow-x: auto;
     padding: 10px;
     font-size: 16px;
@@ -90,7 +81,6 @@ pre {
 }
 
 code {
-    padding: 2px 4px;
     font-size: 90%;
     color: $primary;
     background-color: #F1F0EA;
@@ -100,11 +90,9 @@ code {
 hr {
     border: none;
     border-bottom: 1px dotted #303030;
-    margin: 45px 0;
 }
 
 table {
-    margin-bottom:40px;
     width: 100%;
 
     tbody > tr:nth-child(odd) > td,
@@ -113,11 +101,8 @@ table {
     }
 
     th {
-        padding: 0 10px 10px;
         text-align: left;
     }
-
-    td { padding: 10px; }
 
     tr { border-bottom: 1px dotted #AEADAD; }
 }
@@ -133,8 +118,6 @@ table {
     color: #000;
     display: block;
 }
-
-.fluid-width-video-wrapper { margin-bottom: 40px; }
 
 .hidden {
     text-indent: -9999px;
@@ -158,7 +141,7 @@ table {
     margin: 0 auto;
     position: relative;
     width: 100%;
-    max-width: 889px;
+    max-width: 75rem;
 }
 
 #wrapper {
@@ -182,9 +165,6 @@ table {
     color: #FEFEFE;
     font-size: 14px;
     font-weight: 700;
-    padding: 10px 12px;
-    text-transform: uppercase;
-
     &:hover { background: $primary; }
 }
 
@@ -193,29 +173,18 @@ table {
     color: #FFF;
     float: left;
     font-size: 17px;
-    margin: 0 0 0 10px;
-    padding: 3px 8px 4px;
-
     &:hover { background: $secondary; }
 }
 
 .error {
     text-align: center;
-}
-
-.comments {
-    margin-top: 10px;
-}
 
 /* ============================================================ */
 /* Site Header */
 /* ============================================================ */
 
-.site-header {
-    padding: 40px 0 0;
-    overflow: auto;
+.site-header {    overflow: auto;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .site-title-wrapper {
@@ -224,18 +193,10 @@ table {
 }
 
 .site-title {
-    float: left;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0;
-    text-transform: uppercase;
+    float: left;    margin: 0;
 
-    a {
-        float: left;
-        background: $primary;
+    a {        background: $primary;
         color: #FEFEFE;
-        padding: 5px 10px 6px;
-
         &:hover { background: $secondary; }
     }
 }
@@ -246,17 +207,11 @@ table {
 }
 
 .site-nav {
-    list-style: none;
-    margin: 28px 0 10px;
-    padding: 0;
+    list-style: none;    padding: 0;
 }
 
 .site-nav-item {
     display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    margin: 0 10px;
-
     a:hover { color: #424242; }
 }
 
@@ -269,20 +224,11 @@ table {
 .post-container { margin: 0 40px; }
 
 .post-header {
-    border-bottom: 6px solid $secondary;
-    margin: 0 0 20px;
-    padding: 0 0 20px;
-    text-align: center;
-    text-transform: uppercase;
+    border-bottom: 6px solid $secondary;    text-align: center;
 }
 
 .post-title,
-.page-title {
-    font-size: 52px;
-    font-weight: 700;
-    margin: 15px 0;
-    text-align: center;
-    text-transform: uppercase;
+.page-title {    text-align: center;
 }
 
 .page-title { margin: 15px 40px; }
@@ -290,28 +236,13 @@ table {
 .post-date,
 .blog-description {
     color: #AEADAD;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    margin: 25px 0 0;
-
     a { color: #AEADAD; }
     a:hover { color: $primary; }
-
-    &:after {
-        border-bottom: 1px dotted $secondary;
-        content: "";
-        display: block;
-        margin: 40px auto 0;
-        width: 100px;
-    }
 }
 
 .post-content {
     a:hover {
-        border-bottom: 1px dotted $primary;
-        padding: 0 0 2px;
-    }
+        border-bottom: 1px dotted $primary;    }
 
     &:last-child { margin-bottom: 0; }
 
@@ -331,20 +262,17 @@ table {
     }
 }
 
-.post-footer { margin-top: 5px; }
+.post-footer {}
 
 .post-tags,
 .share {
     color: #AEADAD;
-    font-size: 14px;
-
-    span { font-weight: 600; }
+    span {
+        font-weight: 600;
+    }
 }
 
-.post-tags {
-    float: left;
-    margin: 3px 0 0;
-    a:hover { color: $secondary; }
+.post-tags {    a:hover { color: $secondary; }
 }
 
 .share {
@@ -353,12 +281,7 @@ table {
     a {
         background: $primary;
         color: #FFF;
-        display: inline-block;
-        font-size: 16px;
-        margin-left: 5px;
-        padding: 5px 0 4px;
-        width: 30px;
-        text-align: center;
+        display: inline-block;        text-align: center;
     }
 
     a:hover { background: $secondary; }
@@ -366,19 +289,12 @@ table {
 
 .post-navigation {
     display: table;
-    margin: 70px auto 100px;
 }
 
 .newer-posts,
 .older-posts {
-    float: left;
     background: $primary;
     color: #FEFEFE;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0 5px;
-    padding: 5px 10px 6px;
-    text-transform: uppercase;
 
     &:hover {
         background: $secondary;
@@ -393,12 +309,10 @@ table {
 
 .post-list {
     list-style: none;
-    padding: 0;
 }
 
 .post-stub {
     border-bottom: 1px dotted $secondary;
-    margin: 0;
     position: relative;
 
     &:first-child { padding-top: 0; }
@@ -409,12 +323,9 @@ table {
         transition: all 0.2s ease-in-out;
         display: block;
         color: #424242;
-        padding: 20px 5px;
-
         &:hover {
             background: #FCF5F5;
             color: $primary;
-            padding: 20px 12px;
 
             .post-stub-tag { background: $primary; }
         }
@@ -425,23 +336,14 @@ table {
     background: $secondary;
     border-radius: 3px;
     color: #FFF;
-    float: right;
-    font-size: 10px;
-    margin: 7px 0 0;
-    padding: 0 5px;
-    text-transform: uppercase;
 }
 
 .post-stub-title {
     display: inline-block;
-    margin: 0;
-    text-transform: none;
 }
 
 .post-stub-description {
     display: inline-block;
-    margin: 0;
-    text-transform: none;
 }
 
 .post-stub-date {
@@ -453,7 +355,6 @@ table {
 .next-posts-link a,
 .previous-posts-link a {
     display: block;
-    padding: 8px 11px;
 }
 
 /* ============================================================ */
@@ -461,19 +362,15 @@ table {
 /* ============================================================ */
 
 .author-profile {
-    margin: 0 40px;
 
     &:after {
         border-bottom: 1px dotted $secondary;
         content: "";
         display: block;
-        margin: 40px auto 0;
-        width: 100px;
     }
 }
 
 .author-heading {
-    margin: 15px auto;
     text-align: center;
     width: 100%;
 }
@@ -481,45 +378,29 @@ table {
 .author-avatar {
     border-radius: 50px;
     display: inline;
-    height: 50px;
-    margin: 5px 10px 0 0;
-    width: 50px;
     vertical-align: middle;
 }
 
 .author-name {
     display: inline;
-    font-size: 52px;
-    font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
     vertical-align: middle;
 }
 
 .author-meta {
     color: #AEADAD;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    margin: 25px 0 0;
     text-align: center;
-    text-transform: uppercase;
 
     span {
         display: inline-block;
-        margin: 0 10px 8px;
     }
-
-    i { margin-right: 8px; }
 
     a { color: #AEADAD; }
     a:hover { color: $primary; }
 }
 
 .author-bio {
-    margin: 20px auto 0;
     text-align: center;
-    max-width: 700px;
 }
 
 /* ============================================================ */
@@ -530,10 +411,10 @@ table {
     background: $secondary;
     color: #D3D3D3;
     height: 265px;
-    margin-top: 95px;
     overflow: auto;
 
-    .site-title-wrapper { margin: 80px auto 35px; }
+    .site-title-wrapper {
+    }
 
     .site-title a:hover,
     .button-square:hover {
@@ -543,14 +424,10 @@ table {
 
 .footer-copyright {
     color: #656565;
-    font-size: 14px;
-    margin: 0;
     text-align: center;
-    text-transform: uppercase;
 
     a {
         color: #656565;
-        font-weight: 700;
 
         &:hover { color: #FEFEFE; }
     }
@@ -578,45 +455,12 @@ table {
 }
 
 @media only screen and (max-width: 600px) {
-    h1, h2 { margin-bottom: 20px; }
-
-    p { margin-bottom: 20px; }
-
-    ul, ol { margin-bottom: 20px; }
-
-    img { margin: 30px 0; }
-
-    blockquote { margin: 30px 0;}
-
-    pre { margin: 20px 0; }
-
-    hr { margin: 35px 0; }
-
-    .site-header {
-        padding-top: 40px;
-    }
-
-    .site-title {
-        float: none;
-        margin-bottom: 15px;
-
-        a {
-            float: none;
-        }
-
-        + .button-square {
-            margin-left: 0;
-        }
-    }
 
     .site-nav-item {
         display: block;
-        margin: 15px 0;
     }
 
     .post-header {
-        margin-bottom: 20px;
-        padding-bottom: 20px;
         p {
             word-wrap: break-word;
             overflow-wrap: break-word;
@@ -627,26 +471,8 @@ table {
     .page-title,
     .author-name,
     .author-heading {
-        font-size: 42px;
-        margin-top: 5px;
         word-wrap: break-word;
         overflow-wrap: break-word;
-    }
-
-    .post-date,
-    .blog-description,
-    .author-meta {
-        margin-top: 20px;
-
-        &:after, &:before {
-            margin-top: 30px;
-        }
-    }
-
-    .author-profile {
-        &:after, &:before {
-            margin-top: 20px;
-        }
     }
 
     .post-stub-title { display: block; }
@@ -656,102 +482,37 @@ table {
         display: block;
     }
 
-    .post-list {
-        margin-top: 20px;
-    }
-
-    .post-container,
-    .post-list,
-    .author-profile {
-        margin-right: 25px;
-        margin-left: 25px;
-    }
-
     .post-tags { width: 100%; }
 
-    .post-stub a,
-    .post-stub a:hover {
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-
-    .share {
-        float: left;
-        margin-top: 20px;
-
-        a {
-            margin: 0 5px 0 0;
-        }
-    }
-
     .footer {
-        margin-top: 50px;
 
         .site-title-wrapper {
             text-align: center;
         }
 
         .button-jump-top {
-            clear: both;
             display: inline-block;
-            float: none;
         }
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .site-header {
-        padding-top: 40px;
-    }
 
     .post-title,
     .page-title,
     .author-name,
     .author-heading {
-        font-size: 30px;
-        line-height: 1.2;
+        line-height: 1.5;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
 
-    .post-date,
-    .blog-description,
-    .author-meta {
-        line-height: 1.6;
-    }
-
-    .post-date,
-    .blog-description,
-    .author-meta {
-        margin-top: 10px;
-
-        &:after, &:before {
-            margin-top: 20px;
-        }
-    }
-
-    .author-profile {
-        &:after, &:before {
-            margin-top: 10px;
-        }
-    }
-
-    .post-container,
-    .post-list,
-    .author-profile {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
     .author-avatar {
         display: block;
-        margin: 0 auto 18px;
     }
 
     .author-meta span {
         display: block;
-        margin: 18px 0;
     }
-
-    .footer-copyright { padding: 0 10px; }
+    }
 }
