@@ -1,4 +1,4 @@
-baseurl = "https://example.com/"
+baseurl = "http://painter-rabbit-30841.netlify.com/"
 title = "Ghostwriter example"
 theme = "ghostwriter"
 languageCode = "en-us"
